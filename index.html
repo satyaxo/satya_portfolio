@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styleguide.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Liquid animation */
+        .liquid-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #00f, #0ff);
+        }
+
+        .liquid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.6), rgba(0, 255, 255, 0.1));
+            animation: flow 4s infinite linear;
+        }
+
+        @keyframes flow {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        /* Custom styles for the back-to-top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: none;
+        }
+
+        .back-to-top:hover {
+            background-color: #333;
+        }
+
+        .show {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="desktop">
+        <div class="overlap-wrapper">
+            <div class="overlap">
+                <div class="overlap-group">
+                    <img class="ellipse" src="img/ellipse-1.svg" />
+                    <img class="img" src="img/ellipse-3.svg" />
+                    <div class="text-wrapper">Sneha Satya Vardhan Tiruveedula</div>
+                    <img class="ellipse-2" src="img/ellipse-2.svg" />
+                    <img class="ellipse-3" src="img/ellipse2-1.svg" />
+                    <p class="hi-there-i-m-satya">
+                        Hi there! I&#39;m Satya. <br /><br />Welcome to my portfolio where I share my passion and projects.
+                    </p>
+                    <img class="whatsapp-image" src="img/whatsapp-image-2024-07-20-at-11-24-03-8221bd6e-1.png" />
+
+                    <!-- Liquid effect container -->
+                    <div class="liquid-container">
+                        <div class="liquid"></div>
+                    </div>
+
+                    <!-- EchoByte GitHub link icon -->
+                    <a href="https://github.com/satyaxo/EchoByte" target="_blank">
+                        <img class="github" src="img/github.svg" alt="EchoByte GitHub" />
+                    </a>
+
+                    <!-- Echo Byte GitHub link icon -->
+                    <a href="https://github.com/satyaxo/EchoByte" target="_blank">
+                        <img class="link" src="img/link.svg" alt="Fake News GitHub" />
+                  
+
+                    <img class="original" src="img/original-1.png" />
+                    <img class="github-2" src="img/github-1.svg" />
+
+                    <div id="projects" class="text-wrapper-4">PROJECTS</div>
+                    <p class="echobyte-an-audio-to">
+                        EchoByte : An audio to Text summarisation tool (NLP, NLTK, Streamlit, NVDIA)<br /><br />EchoByte is an
+                        innovative application designed to transform live audio inputs into concise summaries. It leverages
+                        cutting-edge speech recognition and natural language processing techniques to generate summaries in
+                        real-time, providing users with efficient and effective ways to digest spoken content.
+                    </p>
+                    <p class="p">
+                        Fake News Detection: created a website using streamlit leveraged with deep learning techniques to detect
+                        fake news articles
+                    </p>
+                    <!-- EchoByte GitHub link icon -->
+                    <a href="https://github.com/satyaxo/Fake-News-detector" target="_blank">
+                      <img class="github" src="img/github.svg" alt="EchoByte GitHub" />
+                  </a>
+
+                  <!-- Echo Byte GitHub link icon -->
+                  <a href="https://github.com/satyaxo/Fake-News-detector" target="_blank">
+                      <img class="link" src="img/link-1.svg" alt="Fake News GitHub" />
+
+                    <img class="union" src="img/union.png" />
+                    <img class="link-2" src="img/link-1.svg" />
+                    <img class="github-3" src="img/github-2.svg" />
+                    <img class="linkedin" src="img/linkedin.svg" />
+                    <div class="element-avatars"></div>
+                    <div id="about-me" class="text-wrapper-5">About Me</div>
+                    <p class="aspiring-to-leverage">
+                        Aspiring to leverage my specialization in Artificial Intelligence to innovate and drive technological
+                        advancements.<br /><br />I have developed a strong foundation in advanced programming languages such as
+                        Python and R. My technical expertise spans frameworks like Django, Flask, and Streamlit, alongside
+                        libraries such as Scikit-learn and TensorFlow. With a solid understanding of machine learning, deep
+                        learning, and natural language processing, I am passionate about applying AI solutions to real-world
+                        challenges. My educational journey and hands-on experience position me well for a dynamic career in
+                        technology and innovation.
+                    </p>
+                    <div id="contact-me" class="text-wrapper-6">Contact Me</div>
+                    <a href="http://www.linkedin.com/in/satya06" class="text-wrapper-7">http://www.linkedin.com/in/satya06</a>
+                    <a href="https://github.com/satyaxo" class="text-wrapper-8">https://github.com/satyaxo</a>
+                    <div class="element">+91&nbsp;&nbsp;8985110981</div>
+                    <div class="text-wrapper-9">ssvardhant@gmail.com</div>
+                    <img class="phone-call" src="img/phone-call.svg" />
+                </div>
+                <img class="mail" src="img/mail.svg" />
+
+                <!-- Back to Top Button -->
+                <div id="back-to-top" class="back-to-top">&#9650;</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      // Show or hide the back-to-top button based on scroll position
+      window.addEventListener('scroll', function () {
+        const button = document.getElementById('back-to-top');
+        if (window.scrollY > 300) {
+          button.classList.add('show');
+        } else {
+          button.classList.remove('show');
+        }
+      });
+
+      // Scroll to top when button is clicked
+      document.getElementById('back-to-top').addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+</body>
+</html>
