@@ -801,5 +801,155 @@ body {
   from, to { border-color: transparent }
   50% { border-color: black; }
 }
+/* Container for About Me section with a background box */
+.about-me-container {
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  background: linear-gradient(135deg, #ffcccb, #ffebcc);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* Animated background effect */
+@keyframes backgroundAnimation {
+  0% {
+      background: linear-gradient(135deg, #ffcccb, #ffebcc);
+  }
+  100% {
+      background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+  }
+}
+
+/* Text styling and animation */
+.text-wrapper-5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  animation: textFadeIn 3s ease-in-out;
+}
+
+/* Text fade-in animation */
+@keyframes textFadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.aspiring-to-leverage {
+  font-size: 16px;
+  color: #666;
+  animation: textSlideIn 4s ease-in-out;
+}
+
+/* Text slide-in animation */
+@keyframes textSlideIn {
+  0% {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+/* Container for About Me section with a background box */
+.about-me-container {
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  background: linear-gradient(135deg, #ffcccb, #ffebcc);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* Animated background effect */
+@keyframes backgroundAnimation {
+  0% {
+      background: linear-gradient(135deg, #ffcccb, #ffebcc);
+  }
+  100% {
+      background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+  }
+}
+
+/* Text styling and animation */
+.text-wrapper-5 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  animation: textFadeIn 3s ease-in-out;
+}
+
+/* Text fade-in animation */
+@keyframes textFadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.aspiring-to-leverage {
+  font-size: 16px;
+  color: #666;
+  animation: textSlideIn 4s ease-in-out;
+}
+
+/* Text slide-in animation */
+@keyframes textSlideIn {
+  0% {
+      opacity: 0;
+      transform: translateX(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+/* Custom styles for the back-to-top button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0); /* Start scaled down */
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for zoom effect */
+  opacity: 0; /* Start hidden */
+}
+
+.back-to-top.show {
+  transform: translateX(-50%) scale(1); /* Zoom in */
+  opacity: 1; /* Make visible */
+}
+
+.back-to-top:hover {
+  background-color: #333;
+}
 
 
